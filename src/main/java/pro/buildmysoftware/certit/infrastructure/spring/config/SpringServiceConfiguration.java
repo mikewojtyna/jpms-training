@@ -51,12 +51,15 @@ public class SpringServiceConfiguration {
 
 	@Bean
 	public ClientManager clientManager(MessageSender messageSender,
-					   ClientDb clientDb) {
-		return new ClientManager(messageSender, clientDb);
+					   ClientDb clientDb,
+					   EventPublisher eventPublisher,
+					   Clock clock) {
+		return new ClientManager(messageSender, clientDb,
+			eventPublisher, clock);
 	}
 
 	@Bean
-	public ProductCatalogService productCatalogService() {
+	public ProductCatalogService productCatalogService(EventPublisher eventPublisher, Clock clock) {
 		return new ProductCatalogService(new ProductCatalog() {
 			@Override
 			public Collection<Product> allProducts() {
@@ -67,7 +70,7 @@ public class SpringServiceConfiguration {
 			public void addNewProduct(Product product) {
 				// do nothing
 			}
-		});
+		}, eventPublisher, clock);
 	}
 
 	@Bean

@@ -13,7 +13,12 @@ public class SpringEventPublisher implements EventPublisher {
 	}
 
 	@Override
-	public void publish(Iterable<DomainEvent> domainEvents) {
-		domainEvents.forEach(applicationEventPublisher::publishEvent);
+	public void publish(Iterable<DomainEvent> events) {
+		events.forEach(applicationEventPublisher::publishEvent);
+	}
+
+	@Override
+	public void publish(DomainEvent event) {
+		applicationEventPublisher.publishEvent(event);
 	}
 }
