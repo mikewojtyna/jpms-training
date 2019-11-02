@@ -10,7 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import pro.buildmysoftware.certit.application.request.CertificateService;
 import pro.buildmysoftware.certit.domain.request.RequestCertificateCommand;
-import pro.buildmysoftware.certit.infrastructure.spring.web.CertificateRestController;
+import pro.buildmysoftware.certit.infrastructure.spring.rest.request.CertificateRestController;
 
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
