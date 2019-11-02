@@ -1,4 +1,4 @@
-package pro.buildmysoftware.certit.web;
+package pro.buildmysoftware.certit.infrastructure.spring.web;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
