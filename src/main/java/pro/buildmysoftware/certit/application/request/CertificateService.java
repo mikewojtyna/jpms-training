@@ -7,6 +7,7 @@ import pro.buildmysoftware.certit.domain.request.*;
 import java.util.function.Consumer;
 
 public class CertificateService {
+
 	private final AggregateRepository<CertificateRequest,
 		CertificateRequestId> repository;
 	private final CertificateOffice office;

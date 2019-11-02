@@ -4,6 +4,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class AggregateId {
+
 	private final UUID id;
 
 	public AggregateId(UUID uuid) {

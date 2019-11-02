@@ -7,6 +7,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 public class CertificateRequest {
+
 	private final CertificateRequestId id;
 	private final CertificateTypeId certificateType;
 	private final CertificateRequester requester;

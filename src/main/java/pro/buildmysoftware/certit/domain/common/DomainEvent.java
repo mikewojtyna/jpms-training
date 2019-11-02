@@ -8,5 +8,6 @@ import java.time.Instant;
 @Value
 @NonFinal
 public class DomainEvent {
+
 	private Instant timestamp;
 }

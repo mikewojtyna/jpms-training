@@ -4,9 +4,13 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import pro.buildmysoftware.certit.application.catalog.ProductCatalogService;
+import pro.buildmysoftware.certit.application.client.ClientManager;
 import pro.buildmysoftware.certit.application.request.CertificateService;
 import pro.buildmysoftware.certit.domain.catalog.Product;
 import pro.buildmysoftware.certit.domain.catalog.ProductCatalog;
+import pro.buildmysoftware.certit.domain.client.ClientDb;
+import pro.buildmysoftware.certit.domain.client.ClientDetails;
+import pro.buildmysoftware.certit.domain.client.MessageSender;
 import pro.buildmysoftware.certit.domain.common.AggregateRepository;
 import pro.buildmysoftware.certit.domain.common.EventPublisher;
 import pro.buildmysoftware.certit.domain.request.CertificateOffice;
@@ -22,6 +26,34 @@ import java.util.List;
 
 @Configuration
 public class SpringServiceConfiguration {
+
+	@Bean
+	public ClientDb clientDb() {
+		return new ClientDb() {
+			@Override
+			public void addClient(ClientDetails details) {
+				// do nothing
+			}
+
+			@Override
+			public void updateClient(ClientDetails clientDetails) {
+				// do nothing
+			}
+		};
+	}
+
+	@Bean
+	public MessageSender messageSender() {
+		return (client, msg) -> {
+			// do nothing
+		};
+	}
+
+	@Bean
+	public ClientManager clientManager(MessageSender messageSender,
+					   ClientDb clientDb) {
+		return new ClientManager(messageSender, clientDb);
+	}
 
 	@Bean
 	public ProductCatalogService productCatalogService() {

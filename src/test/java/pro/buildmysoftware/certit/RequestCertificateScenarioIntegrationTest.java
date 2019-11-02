@@ -61,6 +61,7 @@ public class RequestCertificateScenarioIntegrationTest {
 
 	@TestConfiguration
 	public static class TestClockProvider {
+
 		@Bean
 		@Primary
 		public Clock fixedClock() {
