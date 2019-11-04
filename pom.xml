@@ -24,6 +24,14 @@
 				<version>
 					${maven-surefire-plugin.version}
 				</version>
+				<configuration>
+					<!--
+					Required, otherwise surefire
+					fails to set correct module/classpath
+					and Spring classpath scanning fails
+					 -->
+					<forkCount>0</forkCount>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

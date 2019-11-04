@@ -12,9 +12,6 @@
 	<artifactId>certit-request-spring-adapters</artifactId>
 
 	<properties>
-		<mapstruct-processor.version>
-			1.3.0.Final
-		</mapstruct-processor.version>
 		<domain-common.version>
 			1.0-SNAPSHOT
 		</domain-common.version>
@@ -80,11 +77,6 @@
 					</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.mapstruct</groupId>
-			<artifactId>mapstruct-processor</artifactId>
-			<version>${mapstruct-processor.version}</version>
 		</dependency>
 	</dependencies>
 
