@@ -20,6 +20,13 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>
+					${maven-surefire-plugin.version}
+				</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin.version}
 				</version>
@@ -46,6 +53,23 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>${assertj.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct-processor</artifactId>
 			<version>${mapstruct-processor.version}</version>
@@ -69,6 +93,10 @@
 		<mapstruct-processor.version>
 			1.3.0.Final
 		</mapstruct-processor.version>
+		<jupiter.version>5.5.2</jupiter.version>
+		<assertj.version>3.13.2</assertj.version>
+		<maven-surefire-plugin.version>2.22.2
+		</maven-surefire-plugin.version>
 	</properties>
 
 </project>
