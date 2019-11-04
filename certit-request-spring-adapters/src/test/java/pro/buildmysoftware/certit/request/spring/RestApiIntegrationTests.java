@@ -1,4 +1,4 @@
-package pro.buildmysoftware.certit;
+package pro.buildmysoftware.certit.request.spring;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,8 +9,8 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import pro.buildmysoftware.certit.request.application.CertificateService;
-import pro.buildmysoftware.certit.infrastructure.spring.rest.request.CertificateRestController;
 import pro.buildmysoftware.certit.request.domain.RequestCertificateCommand;
+import pro.buildmysoftware.certit.request.spring.request.CertificateRestController;
 
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;

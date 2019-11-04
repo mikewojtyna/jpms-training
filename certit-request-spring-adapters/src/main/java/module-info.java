@@ -1,4 +1,4 @@
-module pro.buildmysoftware.certit.request.spring {
+open module pro.buildmysoftware.certit.request.spring {
 	requires pro.buildmysoftware.certit.request;
 	requires pro.buildmysoftware.domain.common;
 	requires spring.boot.autoconfigure;
@@ -9,4 +9,8 @@ module pro.buildmysoftware.certit.request.spring {
 	requires lombok;
 	requires spring.boot;
 	requires spring.beans;
+	requires net.bytebuddy;
+	requires com.fasterxml.classmate;
+	requires java.sql;
+	requires com.fasterxml.jackson.databind;
 }
