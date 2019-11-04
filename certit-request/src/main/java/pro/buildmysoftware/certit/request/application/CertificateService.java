@@ -1,20 +1,18 @@
-package pro.buildmysoftware.certit.application.request;
+package pro.buildmysoftware.certit.request.application;
 
-import pro.buildmysoftware.certit.domain.request.*;
-import pro.buildmysoftware.domain.common.AggregateRepository;
+import pro.buildmysoftware.certit.request.domain.*;
 import pro.buildmysoftware.domain.common.EventPublisher;
 
 import java.util.function.Consumer;
 
 public class CertificateService {
 
-	private final AggregateRepository<CertificateRequest,
-		CertificateRequestId> repository;
+	private final CertificateRequestRepository repository;
 	private final CertificateOffice office;
 	private final EventPublisher eventPublisher;
 
-	public CertificateService(AggregateRepository<CertificateRequest,
-		CertificateRequestId> repository, CertificateOffice office,
+	public CertificateService(CertificateRequestRepository repository,
+				  CertificateOffice office,
 				  EventPublisher eventPublisher) {
 		this.repository = repository;
 		this.office = office;

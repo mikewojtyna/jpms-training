@@ -1,15 +1,11 @@
-package pro.buildmysoftware.certit.infrastructure.spring.persistence;
+package pro.buildmysoftware.certit.request.spring.persistence;
 
-import pro.buildmysoftware.certit.request.domain.CertificateRequest;
-import pro.buildmysoftware.certit.request.domain.CertificateRequestId;
-import pro.buildmysoftware.certit.request.domain.CertificateRequester;
-import pro.buildmysoftware.certit.request.domain.CertificateTypeId;
-import pro.buildmysoftware.domain.common.AggregateRepository;
+import pro.buildmysoftware.certit.request.domain.*;
 
 import java.util.Optional;
 import java.util.UUID;
 
-public class SpringCertificateRequestRepository implements AggregateRepository<CertificateRequest, CertificateRequestId> {
+public class SpringCertificateRequestRepository implements CertificateRequestRepository {
 
 	private final CertificateRequestSpringDateRepository repository;
 

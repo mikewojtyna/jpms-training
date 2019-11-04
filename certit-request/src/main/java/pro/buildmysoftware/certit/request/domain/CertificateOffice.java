@@ -1,4 +1,4 @@
-package pro.buildmysoftware.certit.domain.request;
+package pro.buildmysoftware.certit.request.domain;
 
 import java.time.Clock;
 import java.util.List;

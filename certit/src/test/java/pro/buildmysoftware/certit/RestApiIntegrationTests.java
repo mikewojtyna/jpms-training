@@ -8,9 +8,9 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import pro.buildmysoftware.certit.application.request.CertificateService;
-import pro.buildmysoftware.certit.domain.request.RequestCertificateCommand;
+import pro.buildmysoftware.certit.request.application.CertificateService;
 import pro.buildmysoftware.certit.infrastructure.spring.rest.request.CertificateRestController;
+import pro.buildmysoftware.certit.request.domain.RequestCertificateCommand;
 
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;

@@ -1,7 +1,8 @@
 open module pro.buildmysoftware.certit.app {
+	requires pro.buildmysoftware.domain.common;
+	requires pro.buildmysoftware.certit.request;
 	requires lombok;
 	requires spring.web;
-	requires pro.buildmysoftware.domain.common;
 	requires spring.boot.autoconfigure;
 	requires spring.boot;
 	requires spring.context;

@@ -5,18 +5,19 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import pro.buildmysoftware.certit.application.catalog.ProductCatalogService;
 import pro.buildmysoftware.certit.application.client.ClientManager;
-import pro.buildmysoftware.certit.application.request.CertificateService;
 import pro.buildmysoftware.certit.domain.catalog.Product;
 import pro.buildmysoftware.certit.domain.catalog.ProductCatalog;
 import pro.buildmysoftware.certit.domain.client.ClientDb;
 import pro.buildmysoftware.certit.domain.client.ClientDetails;
 import pro.buildmysoftware.certit.domain.client.MessageSender;
-import pro.buildmysoftware.certit.domain.request.CertificateOffice;
-import pro.buildmysoftware.certit.domain.request.CertificateRequest;
-import pro.buildmysoftware.certit.domain.request.CertificateRequestId;
 import pro.buildmysoftware.certit.infrastructure.spring.event.SpringEventPublisher;
 import pro.buildmysoftware.certit.infrastructure.spring.persistence.CertificateRequestSpringDateRepository;
 import pro.buildmysoftware.certit.infrastructure.spring.persistence.SpringCertificateRequestRepository;
+import pro.buildmysoftware.certit.request.application.CertificateService;
+import pro.buildmysoftware.certit.request.domain.CertificateOffice;
+import pro.buildmysoftware.certit.request.domain.CertificateRequest;
+import pro.buildmysoftware.certit.request.domain.CertificateRequestId;
+import pro.buildmysoftware.certit.request.domain.CertificateRequestRepository;
 import pro.buildmysoftware.domain.common.AggregateRepository;
 import pro.buildmysoftware.domain.common.EventPublisher;
 
@@ -74,7 +75,7 @@ public class SpringServiceConfiguration {
 	}
 
 	@Bean
-	public CertificateService certificateService(AggregateRepository<CertificateRequest, CertificateRequestId> repository, CertificateOffice office, EventPublisher eventPublisher) {
+	public CertificateService certificateService(CertificateRequestRepository repository, CertificateOffice office, EventPublisher eventPublisher) {
 		return new CertificateService(repository, office,
 			eventPublisher);
 	}

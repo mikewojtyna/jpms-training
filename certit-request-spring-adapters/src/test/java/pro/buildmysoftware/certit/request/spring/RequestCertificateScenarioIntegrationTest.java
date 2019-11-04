@@ -1,4 +1,4 @@
-package pro.buildmysoftware.certit;
+package pro.buildmysoftware.certit.request.spring;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
