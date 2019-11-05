@@ -18,6 +18,9 @@
 		</domain-common.version>
 		<certit-client.version>1.0-SNAPSHOT</certit-client.version>
 		<spring-boot.version>2.2.0.RELEASE</spring-boot.version>
+		<certit-spring-common.version>
+			1.0-SNAPSHOT
+		</certit-spring-common.version>
 	</properties>
 
 	<dependencyManagement>
@@ -34,6 +37,11 @@
 	</dependencyManagement>
 
 	<dependencies>
+		<dependency>
+			<groupId>pro.buildmysoftware.certit</groupId>
+			<artifactId>certit-spring-common</artifactId>
+			<version>${certit-spring-common.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>pro.buildmysoftware</groupId>
 			<artifactId>domain-common</artifactId>

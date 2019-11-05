@@ -1,4 +1,5 @@
 open module pro.buildmysoftware.certit.request.spring {
+	requires pro.buildmysoftware.certit.spring.common;
 	requires pro.buildmysoftware.certit.request;
 	requires pro.buildmysoftware.domain.common;
 	requires spring.boot.autoconfigure;

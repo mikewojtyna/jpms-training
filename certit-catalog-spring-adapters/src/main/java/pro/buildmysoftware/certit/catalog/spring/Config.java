@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import pro.buildmysoftware.certit.catalog.application.ProductCatalogService;
 import pro.buildmysoftware.certit.catalog.domain.Product;
 import pro.buildmysoftware.certit.catalog.domain.ProductCatalog;
+import pro.buildmysoftware.certit.spring.common.SpringEventPublisher;
 import pro.buildmysoftware.domain.common.EventPublisher;
 
 import java.time.Clock;

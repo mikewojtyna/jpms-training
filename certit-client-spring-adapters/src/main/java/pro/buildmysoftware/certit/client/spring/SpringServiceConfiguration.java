@@ -7,6 +7,7 @@ import pro.buildmysoftware.certit.client.application.ClientManager;
 import pro.buildmysoftware.certit.client.domain.ClientDb;
 import pro.buildmysoftware.certit.client.domain.ClientDetails;
 import pro.buildmysoftware.certit.client.domain.MessageSender;
+import pro.buildmysoftware.certit.spring.common.SpringEventPublisher;
 import pro.buildmysoftware.domain.common.EventPublisher;
 
 import java.time.Clock;

@@ -1,4 +1,5 @@
 open module pro.buildmysoftware.certit.catalog.spring {
+	requires pro.buildmysoftware.certit.spring.common;
 	requires pro.buildmysoftware.domain.common;
 	requires pro.buildmysoftware.certit.catalog;
 	requires spring.boot.autoconfigure;

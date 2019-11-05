@@ -1,4 +1,4 @@
-package pro.buildmysoftware.certit.catalog.spring;
+package pro.buildmysoftware.certit.spring.common;
 
 import org.springframework.context.ApplicationEventPublisher;
 import pro.buildmysoftware.domain.common.DomainEvent;

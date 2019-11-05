@@ -17,6 +17,9 @@
 		<module>certit-catalog</module>
 		<module>certit-catalog-spring-adapters</module>
 		<module>certit-client-spring-adapters</module>
+		<module>certit-spring-common</module>
+		<module>clock-api</module>
+		<module>system-clock</module>
 	</modules>
 
 	<build>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns="http://maven.apache.org/POM/4.0.0"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>jpms-training</artifactId>
+		<groupId>pro.buildmysoftware</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>pro.buildmysoftware</groupId>
+	<artifactId>clock-service-example</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>pro.buildmysoftware.common</groupId>
+			<artifactId>clock-api</artifactId>
+			<version>${clock-api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>pro.buildmysoftware.common</groupId>
+			<artifactId>system-clock</artifactId>
+			<version>${system-clock.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+	<properties>
+		<clock-api.version>1.0-SNAPSHOT</clock-api.version>
+		<system-clock.version>1.0-SNAPSHOT</system-clock.version>
+	</properties>
+
+</project>

@@ -6,9 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import pro.buildmysoftware.certit.request.application.CertificateService;
 import pro.buildmysoftware.certit.request.domain.CertificateOffice;
 import pro.buildmysoftware.certit.request.domain.CertificateRequestRepository;
-import pro.buildmysoftware.certit.request.spring.event.SpringEventPublisher;
 import pro.buildmysoftware.certit.request.spring.persistence.CertificateRequestSpringDateRepository;
 import pro.buildmysoftware.certit.request.spring.persistence.SpringCertificateRequestRepository;
+import pro.buildmysoftware.certit.spring.common.SpringEventPublisher;
 import pro.buildmysoftware.domain.common.EventPublisher;
 
 import java.time.Clock;
