@@ -10,7 +10,6 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<modules>
-		<module>certit</module>
 		<module>domain-common</module>
 		<module>certit-request</module>
 		<module>certit-request-spring-adapters</module>
