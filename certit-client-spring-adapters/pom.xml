@@ -49,6 +49,17 @@
 					<artifactId>junit-vintage-engine
 					</artifactId>
 				</exclusion>
+				<!--
+				exclusion required because of IntelliJ
+				split package bug (Maven apparently works
+				just ok)
+				-->
+				<exclusion>
+					<groupId>
+						org.skyscreamer
+					</groupId>
+					<artifactId>jsonassert</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
