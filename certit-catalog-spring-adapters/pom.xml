@@ -16,7 +16,6 @@
 		<domain-common.version>
 			1.0-SNAPSHOT
 		</domain-common.version>
-		<certit-request.version>1.0-SNAPSHOT</certit-request.version>
 		<spring-boot.version>2.2.0.RELEASE</spring-boot.version>
 		<certit-catalog.version>1.0-SNAPSHOT</certit-catalog.version>
 	</properties>
@@ -41,27 +40,13 @@
 			<version>${certit-catalog.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>pro.buildmysoftware.certit</groupId>
-			<artifactId>certit-request</artifactId>
-			<version>${certit-request.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>pro.buildmysoftware</groupId>
 			<artifactId>domain-common</artifactId>
 			<version>${domain-common.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

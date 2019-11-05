@@ -13,8 +13,11 @@
 	<artifactId>certit-client-spring-adapters</artifactId>
 
 	<properties>
-		<spring-boot.version>2.2.0.RELEASE</spring-boot.version>
+		<domain-common.version>
+			1.0-SNAPSHOT
+		</domain-common.version>
 		<certit-client.version>1.0-SNAPSHOT</certit-client.version>
+		<spring-boot.version>2.2.0.RELEASE</spring-boot.version>
 	</properties>
 
 	<dependencyManagement>
@@ -32,13 +35,29 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>pro.buildmysoftware</groupId>
+			<artifactId>domain-common</artifactId>
+			<version>${domain-common.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>pro.buildmysoftware.certit</groupId>
 			<artifactId>certit-client</artifactId>
 			<version>${certit-client.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor
+			</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>junit</groupId>
@@ -49,22 +68,7 @@
 					<artifactId>junit-vintage-engine
 					</artifactId>
 				</exclusion>
-				<!--
-				exclusion required because of IntelliJ
-				split package bug (Maven apparently works
-				just ok)
-				-->
-				<exclusion>
-					<groupId>
-						org.skyscreamer
-					</groupId>
-					<artifactId>jsonassert</artifactId>
-				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
 

@@ -1,6 +1,6 @@
-module pro.buildmysoftware.certit.client.spring {
-	requires pro.buildmysoftware.certit.client;
+open module pro.buildmysoftware.certit.catalog.spring {
 	requires pro.buildmysoftware.domain.common;
+	requires pro.buildmysoftware.certit.client;
 	requires spring.boot.autoconfigure;
 	requires spring.context;
 	requires spring.web;

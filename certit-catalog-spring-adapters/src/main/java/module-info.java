@@ -7,7 +7,6 @@ open module pro.buildmysoftware.certit.catalog.spring {
 	requires lombok;
 	requires spring.boot;
 	requires spring.beans;
-	requires net.bytebuddy;
 	requires com.fasterxml.classmate;
 	requires com.fasterxml.jackson.databind;
 }
