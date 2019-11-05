@@ -1,4 +1,4 @@
-package pro.buildmysoftware.certit.domain.catalog;
+package pro.buildmysoftware.certit.catalog.domain;
 
 public class AddProductCommand {
 

@@ -1,9 +1,9 @@
-package pro.buildmysoftware.certit.application.catalog;
+package pro.buildmysoftware.certit.catalog.application;
 
-import pro.buildmysoftware.certit.domain.catalog.AddProductCommand;
-import pro.buildmysoftware.certit.domain.catalog.Product;
-import pro.buildmysoftware.certit.domain.catalog.ProductAddedToCatalog;
-import pro.buildmysoftware.certit.domain.catalog.ProductCatalog;
+import pro.buildmysoftware.certit.catalog.domain.AddProductCommand;
+import pro.buildmysoftware.certit.catalog.domain.Product;
+import pro.buildmysoftware.certit.catalog.domain.ProductAddedToCatalog;
+import pro.buildmysoftware.certit.catalog.domain.ProductCatalog;
 import pro.buildmysoftware.domain.common.EventPublisher;
 
 import java.time.Clock;

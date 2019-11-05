@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns="http://maven.apache.org/POM/4.0.0"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>jpms-training</artifactId>
+		<groupId>pro.buildmysoftware</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>pro.buildmysoftware.certit</groupId>
+	<artifactId>certit-catalog</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>pro.buildmysoftware</groupId>
+			<artifactId>domain-common</artifactId>
+			<version>${domain-common.version}</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<domain-common.version>1.0-SNAPSHOT</domain-common.version>
+	</properties>
+
+</project>

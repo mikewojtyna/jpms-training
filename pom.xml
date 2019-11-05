@@ -16,6 +16,7 @@
 		<module>certit-request-spring-adapters</module>
 		<module>certit-client</module>
 		<module>certit-client-spring-adapters</module>
+		<module>certit-catalog</module>
 	</modules>
 
 	<build>
