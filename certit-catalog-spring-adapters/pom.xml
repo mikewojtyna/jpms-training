@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns="http://maven.apache.org/POM/4.0.0"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>jpms-training</artifactId>
+		<groupId>pro.buildmysoftware</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>pro.buildmysoftware.certit</groupId>
+	<artifactId>certit-catalog-spring-adapters</artifactId>
+
+	<properties>
+		<domain-common.version>
+			1.0-SNAPSHOT
+		</domain-common.version>
+		<certit-request.version>1.0-SNAPSHOT</certit-request.version>
+		<spring-boot.version>2.2.0.RELEASE</spring-boot.version>
+		<certit-catalog.version>1.0-SNAPSHOT</certit-catalog.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies
+				</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>pro.buildmysoftware.certit</groupId>
+			<artifactId>certit-catalog</artifactId>
+			<version>${certit-catalog.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>pro.buildmysoftware.certit</groupId>
+			<artifactId>certit-request</artifactId>
+			<version>${certit-request.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>pro.buildmysoftware</groupId>
+			<artifactId>domain-common</artifactId>
+			<version>${domain-common.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor
+			</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine
+					</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+</project>
