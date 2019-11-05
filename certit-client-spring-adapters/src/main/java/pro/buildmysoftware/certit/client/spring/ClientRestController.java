@@ -1,11 +1,13 @@
-package pro.buildmysoftware.certit.infrastructure.spring.rest.client;
+package pro.buildmysoftware.certit.client.spring;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pro.buildmysoftware.certit.application.client.ClientManager;
-import pro.buildmysoftware.certit.domain.client.SendMessageCommand;
+import pro.buildmysoftware.certit.client.application.ClientManager;
+import pro.buildmysoftware.certit.client.domain.Client;
+import pro.buildmysoftware.certit.client.domain.Message;
+import pro.buildmysoftware.certit.client.domain.SendMessageCommand;
 
 @RestController
 @RequestMapping("/api/clients")
@@ -18,8 +20,9 @@ public class ClientRestController {
 	}
 
 	@PostMapping("/{clientId}/messages")
-	public void sendMsg(@RequestBody SendMessageCommand command) {
-		clientManager.sendMsg(command);
+	public void sendMsg(@RequestBody SendMessageCommandDto command) {
+		clientManager.sendMsg(new SendMessageCommand(new Message(command
+			.getMsg()), new Client()));
 	}
 
 }

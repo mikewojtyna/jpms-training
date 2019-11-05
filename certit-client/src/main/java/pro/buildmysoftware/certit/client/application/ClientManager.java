@@ -1,6 +1,6 @@
-package pro.buildmysoftware.certit.application.client;
+package pro.buildmysoftware.certit.client.application;
 
-import pro.buildmysoftware.certit.domain.client.*;
+import pro.buildmysoftware.certit.client.domain.*;
 import pro.buildmysoftware.domain.common.EventPublisher;
 
 import java.time.Clock;

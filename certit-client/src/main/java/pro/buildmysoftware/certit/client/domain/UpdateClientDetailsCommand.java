@@ -1,4 +1,4 @@
-package pro.buildmysoftware.certit.domain.client;
+package pro.buildmysoftware.certit.client.domain;
 
 public class UpdateClientDetailsCommand {
 
