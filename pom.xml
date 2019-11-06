@@ -20,6 +20,7 @@
 		<module>certit-spring-common</module>
 		<module>clock-api</module>
 		<module>system-clock</module>
+		<module>clock-service-example</module>
 	</modules>
 
 	<build>
